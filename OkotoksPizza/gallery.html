@@ -13,7 +13,6 @@
 
     <body>
 
-
         <header>
             <h1><img src="chefhat.svg" height="60" alt="website logo"> 
             Welcome to Okotoks Pizza!</h1>
@@ -21,33 +20,36 @@
 
         <link rel="stylesheet" href="style.css">
 
-
-        <nav class="navbar">
-            <ul>
-                <li><a href="/index.html">Home Page</a></li>
-                <li><a href="/gallery.html">Gallery</a></li>
-                <li><a href="/contact.html">About Us</a></li>
-                
-            </ul>
-        </nav>
+        <div class="grid-container">
+            <div class="grid-items">
+                <nav class="navbar">
+                    <ul>
+                        <li> <a href="/OkotoksPizza/index.html">Homepage</a></li>
+                        <li><a href="/OkotoksPizza/gallery.html">Gallery</a></li> 
+                        <li><a href="/OkotoksPizza/contact.html">About Us</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </div>
         
     <section class="title">    
         <h2>Fresh Homemade Pizza's from Italy </h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, doloremque ex placeat recusandae quae hic. Velit odio nam adipisci magni!</p>
     </section>
 
-        <section class="images">
+    <div class="grid-container">
+    <div class="grid-item">
+        <div class="images">
             <img src="https://www.discoverwalks.com/blog/wp-content/uploads/2020/02/photo-1567613814045-a5263064bef7-816x544.jpeg"
-            height="400" alt="italy city of Rome">
+            height="300" alt="italy city of Rome">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore rerum sed perferendis iste ab dolorum.</p>
             <img src="https://www.sbs.com.au/food/sites/sbs.com.au.food/files/styles/full/public/pavoni_tcl_d.jpg?itok=m6VN2mYL"
-            height="400" alt="Italian Chef" >
+            height="300" alt="Italian Chef" >
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, laboriosam? Ex, earum voluptas. Reprehenderit, enim?</p>
-        </section>
-
-
-        <section id="video">
-
+        </div>
+        <div class="grid-item">
+            <div id="video">
             <h3>That is how our Pizza's are made!</h3> 
             
             <iframe width="600" height="400" 
@@ -58,14 +60,18 @@
             allowfullscreen>
             </iframe>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minima neque debitis. Quod, nulla cumque?</p>
+            </div>
+        </div>
+    </div>    
 
-        </section>
-    
+    <div class="grid-container">
         <footer class="footer">
             <a>© All rights reserved ©</a>
             <a href="mailto: info@okotokspizza.ca">Email us</a>
             <a href="tel:4035555555">Call us </a>
         </footer>
+    </div>
+
     </body>
 
 </html>
