@@ -6,6 +6,20 @@ header{
 body{
     background-color:black;
 }
+@keyframes coolanimation {
+    0%{ left: 200px}
+    50%{left: 400px;}
+    100%{ left: 200px}
+}
+
+.title{
+    width: 500px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: coolanimation 5s infinite;
+}
+
 .navbar{
     background-color:ivory;
     color: black;
@@ -60,6 +74,19 @@ a:visited{
     color: ivory;
 }
 
+@keyframes coolheader {
+    0%{right: 200px;}
+    50%{right: 500px;}
+    100%{right: 200px;}
+}
+.header{
+    width: auto;
+    height: auto;
+    background-color: rgb(92, 0, 0);
+    position: relative;
+    animation: coolheader 5s ease-in;
+}
+
 body header{
     color:rgb(248, 190, 83);
 }
@@ -67,6 +94,21 @@ body header{
     font-style: italic;
     color:bisque;
 }
+@keyframes coolfooter {
+    0%{top: 100px;}
+    25%{top: 200px;}
+    50%{top: 300px;}
+    100%{top: 100px;}
+}
+
+.footer{
+    width: auto;
+    height: auto;
+    background-color: silver;
+    position: relative;
+    animation: coolfooter 5s ease-in-out;
+}
+
 .footer>a{
     font-style: italic;
     background-color: rgb(230, 227, 227);
@@ -93,4 +135,8 @@ button{
     background-color: olivedrab;
     color: white;
     position:absolute
+}
+button:hover{
+    background-color: rgb(18, 31, 0);
+    font-size: 2rem;
 }
