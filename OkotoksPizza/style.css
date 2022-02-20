@@ -1,174 +1,260 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-header{
-    background-color:darkred;
-    color: whitesmoke;
-    border:outset green;
+header {
+  background-color: darkred;
+  color: ivory;
+  border: outset green;
 }
-body{
-    background-color:black;
+
+body {
+  background-color: black;
 }
+
+@-webkit-keyframes coolanimation {
+  0% {
+    left: 200px;
+  }
+  50% {
+    left: 400px;
+  }
+  100% {
+    left: 200px;
+  }
+}
+
 @keyframes coolanimation {
-    0%{ left: 200px}
-    50%{left: 400px;}
-    100%{ left: 200px}
+  0% {
+    left: 200px;
+  }
+  50% {
+    left: 400px;
+  }
+  100% {
+    left: 200px;
+  }
 }
 
-@media screen and (min-width: 600px){
-    
-    body{
-        background-color: wheat;
-    }
-    a{
-        background-color: turquoise;
-    }
-    header{
-        width: 100vw;
-    }
+@media screen and (min-width: 600px) {
+  body {
+    background-color: wheat;
+  }
+  a {
+    background-color: turquoise;
+  }
+  header {
+    width: 100vw;
+  }
 }
 
-@media screen and (min-width:1100px){
-    #title{
-        display: none;
-    }
-    button{
-        display: none;
-    }
-    body{
-        background-color: turquoise;
-    }
+@media screen and (min-width: 1100px) {
+  #title {
+    display: none;
+  }
+  button {
+    display: none;
+  }
+  body {
+    background-color: turquoise;
+  }
 }
 
-#title{
-    width: 500px;
-    height: 100px;
-    background-color: rgb(185, 0, 0);
-    position: relative;
-    animation: coolanimation 5s infinite;
+#title {
+  width: 500px;
+  height: 100px;
+  background-color: #b90000;
+  position: relative;
+  -webkit-animation: coolanimation 5s infinite;
+          animation: coolanimation 5s infinite;
 }
 
-
-
-.navbar{
-    background-color:ivory;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    border: double darkgreen;
-    
-}
-.reviews{
-    border: solid ivory;
-    background-color:rgb(46, 68, 1);
-    
+.navbar {
+  background-color: ivory;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  border: double darkgreen;
 }
 
-.contact{
-    border: dashed ivory;
-    background-color:rgb(92, 0, 0);
-}
-h2,h3{
-    color: ivory;
-    background-color: olivedrab;
-}
-.footer{
-    background-color:rgb(75, 72, 72);
-    border: groove ivory;
+.navbar a:hover {
+  font-size: 2em;
+  background: darkgreen;
 }
 
-.images{
-    border: double olivedrab;
-    color: ivory;
-    background-color: rgb(0, 22, 11);
+.navbar a:active {
+  color: ivory;
 }
 
-a:hover{
-    font-size: 2em;
-    background: darkgreen;
+.navbar a:link {
+  color: firebrick;
 }
-a:link{
-    color: firebrick;
+
+.navbar a:visited {
+  color: #c95101;
 }
-#video{
-    border:dashed darkred;
-    color: ivory;
-    background-color:rgb(0, 22, 11)
+
+.reviews {
+  border: solid ivory;
+  background-color: #2e4401;
 }
-a:active{
-    color:ivory;
+
+.reviews a:link {
+  color: firebrick;
 }
-a:visited{
-    color:rgb(201, 81, 1);
+
+.reviews a:visited {
+  color: #c95101;
 }
-#title{
-    color: ivory;
+
+.contact {
+  border: dashed ivory;
+  background-color: #5c0000;
+}
+
+h2, h3 {
+  color: ivory;
+  background-color: olivedrab;
+}
+
+.footer {
+  background-color: #4b4848;
+  border: groove ivory;
+}
+
+.images {
+  border: double olivedrab;
+  color: ivory;
+  background-color: #00160b;
+}
+
+#video {
+  border: dashed darkred;
+  color: ivory;
+  background-color: #00160b;
+}
+
+#title {
+  color: ivory;
+}
+
+@-webkit-keyframes coolheader {
+  0% {
+    right: 200px;
+  }
+  50% {
+    right: 500px;
+  }
+  100% {
+    right: 200px;
+  }
 }
 
 @keyframes coolheader {
-    0%{right: 200px;}
-    50%{right: 500px;}
-    100%{right: 200px;}
-}
-.header{
-    width: auto;
-    height: auto;
-    background-color: rgb(92, 0, 0);
-    position: relative;
-    animation: coolheader 5s ease-in;
+  0% {
+    right: 200px;
+  }
+  50% {
+    right: 500px;
+  }
+  100% {
+    right: 200px;
+  }
 }
 
-body header{
-    color:rgb(248, 190, 83);
+.header {
+  width: auto;
+  height: auto;
+  background-color: #5c0000;
+  position: relative;
+  -webkit-animation: coolheader 5s ease-in;
+          animation: coolheader 5s ease-in;
 }
-.reviews + .contact{
-    font-style: italic;
-    color:bisque;
+
+body header {
+  color: #f8be53;
 }
+
+.reviews + .contact {
+  font-style: italic;
+  color: bisque;
+}
+
+@-webkit-keyframes coolfooter {
+  0% {
+    top: 100px;
+  }
+  25% {
+    top: 200px;
+  }
+  50% {
+    top: 300px;
+  }
+  100% {
+    top: 100px;
+  }
+}
+
 @keyframes coolfooter {
-    0%{top: 100px;}
-    25%{top: 200px;}
-    50%{top: 300px;}
-    100%{top: 100px;}
+  0% {
+    top: 100px;
+  }
+  25% {
+    top: 200px;
+  }
+  50% {
+    top: 300px;
+  }
+  100% {
+    top: 100px;
+  }
 }
 
-.footer{
-    width: auto;
-    height: auto;
-    background-color: silver;
-    position: relative;
-    animation: coolfooter 5s ease-in-out;
+.footer {
+  width: auto;
+  height: auto;
+  background-color: silver;
+  position: relative;
+  -webkit-animation: coolfooter 5s ease-in-out;
+          animation: coolfooter 5s ease-in-out;
 }
 
-.footer>a{
-    font-style: italic;
-    background-color: rgb(230, 227, 227);
+.footer > a {
+  font-style: italic;
+  background-color: #e6e3e3;
 }
-.grid-container{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-    background-color: rgb(1, 56, 13);
-    padding: 10px;
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  background-color: #01380d;
+  padding: 10px;
 }
-.grid-item{
-    background-color: rgb(255, 253, 253);
-    display: inline-block;
-    border: 1px solid black;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-    object-fit: fill;
-    
+
+.grid-item {
+  background-color: ivory;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
-button{
-    border: none;
-    background-color: olivedrab;
-    color: white;
-    position:absolute
+
+button {
+  border: none;
+  background-color: olivedrab;
+  color: ivory;
+  position: absolute;
 }
-button:hover{
-    background-color: rgb(18, 31, 0);
-    font-size: 2rem;
+
+button:hover {
+  background-color: #121f00;
+  font-size: 2rem;
 }
+/*# sourceMappingURL=style.css.map */

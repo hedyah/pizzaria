@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "gallery.sass"
+    ],
+    "names": [],
+    "file": "gallery.css"
+}
